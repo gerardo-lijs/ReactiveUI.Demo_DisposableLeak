@@ -79,7 +79,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NuGet.Protocol" Version="5.5.0" />
+    <PackageReference Include="NuGet.Protocol" Version="5.11.0" />
     <PackageReference Include="ReactiveUI.WPF" Version="13.2.2" />
   </ItemGroup>
   <ItemGroup>
