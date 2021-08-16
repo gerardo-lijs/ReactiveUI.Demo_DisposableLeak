@@ -1,0 +1,27 @@
+﻿<Window x:Class="ReactiveDemo.TestMemoryLeakWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReactiveDemo"
+        mc:Ignorable="d"
+        Title="Start" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Margin="10" FontWeight="Bold" >Quick and dirty sample to test what looks like a leak in ReactiveUI WPF.</TextBlock>
+        <StackPanel Margin="10">
+            <TextBlock>How to test:</TextBlock>
+            <TextBlock>1) Click on Open ReactiveDemo.</TextBlock>
+            <TextBlock>2) Click on Force Garbage Collection.</TextBlock>
+            <TextBlock TextWrapping="Wrap" >3) Look console output for ViewModel::AppViewModel::++::1 and ViewModel::AppViewModel::--::0 or alternative use dotMemory or similar to monitor objects in memory snapshots.</TextBlock>
+        </StackPanel>
+        <StackPanel Margin="10">
+            <TextBlock>Memory leak?</TextBlock>
+            <TextBlock>* AppViewModel is disposed fine.</TextBlock>
+            <TextBlock>* NugetDetailsViewModel are disposed the second time you use the demo but we never reach zero count.</TextBlock>
+        </StackPanel>
+
+        <Button Margin="10" Padding="10" Width="300" Click="Button_Click">Open ReactiveDemo</Button>
+        <Button Margin="10" Padding="10" Width="300" Click="ButtonForceGC_Click">Force GC</Button>
+
+    </StackPanel>
+</Window>
