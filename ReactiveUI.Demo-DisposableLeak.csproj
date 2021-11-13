@@ -80,7 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Protocol" Version="5.11.0" />
-    <PackageReference Include="ReactiveUI.WPF" Version="14.3.1" />
+    <PackageReference Include="ReactiveUI.WPF" Version="16.3.10" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
