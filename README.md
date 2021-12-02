@@ -8,3 +8,6 @@ ViewModels are correctly disposed.
 
 # Reactive UI 14-3-1 branch
 ViewModels are not disposed.
+
+# Reactive UI 17-0-1 branch
+ViewModels are not disposed.
